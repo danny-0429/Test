@@ -15,15 +15,14 @@ h1 {
 <a href="https://tenhou.net/0/">連結</a>
 <br>
 <br>
+<button onclick="ShowMeDate()">今天日期</button>
 
 <script>
-function click() {
-  alert('嘗試執行 JavaScript');
+function ShowMeDate() {
+  var Today=new Date();
+　alert("今天日期是 " + Today.getFullYear()+ " 年 " + (Today.getMonth()+1) + " 月 " + Today.getDate() + " 日");
 }
 </script>
-
-<button onclick="click()">點擊我</button>
-
 
 </body>
 </html>
